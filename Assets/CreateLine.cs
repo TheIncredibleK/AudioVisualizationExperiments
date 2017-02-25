@@ -38,7 +38,7 @@ public class CreateLine : MonoBehaviour {
 		}
 		float[] heights = this.GetComponent<ReadSoundData> ().CurrentSample ();
 
-		for (int i = 0; i < width; i++) {
+		for (int i = 0; i < length; i++) {
 				Vector3 myPos = alldots [0, i].transform.position;
 			myPos.y = heights[i] * maxHeight;
 				alldots [0, i].transform.position = myPos;
